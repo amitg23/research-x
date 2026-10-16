@@ -19,9 +19,9 @@ class ResearchManager:
             search_results = await self.perform_searches(search_plan)
             yield f"Searches completed. Generating report..."
             report = await self.write_report(query, search_results)
-            yield f"Report generated. Sending report..."
+            yield f"Report generated. Rendering it..."
             await self.send_email(report)
-            yield "Report sent, research complete"
+            yield "Research complete"
             yield report.markdown_report
 
     async def search(self, item: WebSearchItem) -> str | None :

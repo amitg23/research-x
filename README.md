@@ -13,8 +13,6 @@ pinned: false
 
 ResearchX is a deep-research web app built with Python, Gradio, and the OpenAI Agents SDK. It turns a user question into a multi-step research workflow: planning search queries, gathering web results, synthesizing a detailed markdown report, and optionally emailing the result.
 
-Try it at https://amitg23-researchx.hf.space/
-
 ## What it does
 
 - Accepts a research prompt from the UI
